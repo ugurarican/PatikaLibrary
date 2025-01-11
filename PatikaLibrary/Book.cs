@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace PatikaLibrary
 {
+    //Book adında nesne oluşturuyoruz.
     internal class Book
     {
         private string _bookName;
@@ -19,34 +20,14 @@ namespace PatikaLibrary
         //Parametresiz Constructorımızı tanımlıyoruz.
         public Book()
         {
-            //Console.WriteLine($"Kitabın adını girin:");
-            //_bookName = Console.ReadLine();
-
-            //Console.WriteLine($"Yazarın adını girin:");
-            //_authorName = Console.ReadLine();
-
-            //Console.WriteLine($"Yazarın soyadını girin:");
-            //_authorSurname = Console.ReadLine();
-
-            //Console.WriteLine($"Yayınevini girin:");
-            //_publishingHouse = Console.ReadLine();
-
-            //Console.WriteLine($"Sayfa sayısını girin:");
-            //while (true)
-            //{
-            //    if (int.TryParse(Console.ReadLine(), out int numberOfPages)) {
-            //        break;
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("Geçerli bir sayı giriniz.");
-            //    }
+            //Parametresiz olduğu için burada tanımlama yapmadık.
                         
         }
 
         //Parametreli Constructorımızı tanımlıyoruz.
         public Book(string bookName, string authorName, string authorSurname, int numberOfPages, string publishingHouse)
         {
+            //Parametreli olduğu için burada tanımlama yaptık.
             _bookName = bookName;
             _authorName = authorName;
             _authorSurname = authorSurname;
